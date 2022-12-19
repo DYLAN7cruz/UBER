@@ -1,8 +1,8 @@
 class Account:
-    id       = int
-    nombre   = str
-    edad     = int
-    mail     = str
+    id     = int
+    nombre = str
+    edad   = int
+    mail   = str
     telefono = int
     
     def __init__(self, id, nombre, edad, mail, telefono):

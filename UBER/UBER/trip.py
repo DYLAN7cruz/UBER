@@ -1,16 +1,21 @@
+from car import Car
+from accountDrives import Driver
+from accountUser import User
 from route import Route
-from account_usser import User
+from payment import Payment
 
-class Trip:
-    id          = int
-    route       = Route
-    user        = User("", "", "", "", "", "") 
-    pago        = int
-    progreso    = [int, int]
-    
-    def __init__(self,id, route, user, pago, progreso):
-        self.id         = id
-        self.route      = route
-        self.user       = user
-        self. pago      = pago
-        self.progreso   = progreso
+class Trip(Car, Driver, User, Route, Payment):
+    idTrip    = int
+    user      = User("", "", "", "", "")
+    driver    = Driver("", "", "", "", "","")
+    route     = Route("", "", "", "")
+    payment   = Payment("", "", "", "" ,"")
+    car       = Car("", "", "", "", "", "")
+
+    def __init__(self, idTrip, user, driver, route, payment, car):
+        self.idTrip    = idTrip
+        self.user      = user
+        self.driver    = driver
+        self.route     = route
+        self.payment   = payment
+        self.car       = car

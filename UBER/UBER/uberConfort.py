@@ -1,12 +1,12 @@
 from car import Car
 
 class UberConfort(Car):
-    aceptado    = bool
-    tapizdo     = str
+    aceptado   = bool
     asientos    = int
+    tapizado   = str
     
-    def __init__(self, placa, modelo, color, año, matricula, aceptado, tapizado, asientos, driver):
+    def __init__(self, placa, modelo, color, año, matricula, acpetado, asientos, tapizado, driver):
         super().__init__(placa, modelo, color, año, matricula, driver)
-        self.aceptado   = aceptado
-        self.tapizdo    = tapizado
-        self.asientos   = asientos
+        self.aceptado  = acpetado
+        self.asientos  = asientos
+        self.tapizado  = tapizado

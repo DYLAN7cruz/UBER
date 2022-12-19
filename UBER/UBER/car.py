@@ -1,4 +1,4 @@
-from account_driver import Driver
+from accountDrives import Driver
 
 class Car(Driver):
     placa     = str
@@ -6,14 +6,12 @@ class Car(Driver):
     color     = str
     año       = str
     matricula = str
-    driver = Driver("", "", "", "", "", "")
+    driver    = Driver("", "", "", "", "", "")
     
     def __init__(self, placa, modelo, color, año, matricula, driver):
-        self.placa = placa
-        self.modelo = modelo
-        self.color = color
-        self.año = año
-        self.matricula = matricula
-        self.driver =  driver
-            
-            
+        self.placa      = placa
+        self.modelo     = modelo
+        self.color      = color
+        self.año        = año
+        self.matricula  = matricula
+        self.driver     = driver
